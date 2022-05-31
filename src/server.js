@@ -12,7 +12,7 @@ server.use(express.static("public"))
 server.use(express.urlencoded({ extended: true }))
 
 //conectando ao servidor na porta 3000
-server.listen(3000, () => console.log('rodando na porta 3000'))
+server.listen("https://jobsmanager.luccaslombardi.com.br", () => console.log('rodando na porta 3000'))
 
 //chamando as rotas
 server.use(routes)
